@@ -6,11 +6,14 @@
             <nav class="flex justify-around px-4 md:m-3 items-center">
                 <router-link :to="{ name : 'home' }" class="capitalize text-xl md:text-4xl font-bold">art'elier</router-link>
 
-                <div v-if="isConnected" class="flex">
-                  <router-link :to="{ name : 'exercice-library' }" class="hidden md:block m-2 px-2 capitalize border-2 border-purple-900 text-white">mes exercices</router-link>
+                <div v-if="!isConnected" class="flex">
+                  <router-link :to="{ name : 'exercice-library' }" class="hidden md:block m-2 px-2 capitalize border-2 border-purple-900 text-white">Exercices</router-link>
+                </div>
+                  <div v-if="isConnected" class="flex">
+                     <router-link :to="{ name : 'exercice-library' }" class="hidden md:block m-2 px-2 capitalize border-2 border-purple-900 text-white">Mes exercices</router-link>
                   <router-link :to="{ name : 'exercice-form' }" class="hidden md:block m-2 px-2 capitalize border-2 border-purple-900 text-white">creer un exercice</router-link>
                   <!-- <a href="/lesson" class="hidden md:block">mes cours</a> -->
-                </div>
+                  </div>
 
                 <div v-if="isConnected" class="flex flex-col items-center">
                     <router-link :to="{ name : 'login' }" class="capitalize p-2 text-white"><span class="underline font-bold">Mon compte : </span>{{ username }}</router-link>
