@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/tailwind.css" rel="stylesheet">
+    <title>Art'elier</title>
+</head>
+<body class="m-4">
+    <header class="border-2 border-gray-400">
+        <div class="border-b-2 border-gray-400">
+            <nav class="flex justify-between px-4 md:m-3 items-center">
+                <a href="" class="capitalize text-xl md:text-3xl font-bold">art'elier</a>
+                <a href="" class="hidden md:block">mes exercices</a>
+                <a href="" class="hidden md:block">mes cours</a> 
+                <a href="" class="hidden md:block">connexion</a>
+                <button class="md:hidden px-4 py-1 w-auto bg-gray-600 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">menu</button>
+            </nav>
+        </div>
+            <img class="hidden md:block w-full h-40 md:h-60 object-cover px-5 py-3" src="/img/stage.jpg" alt="">
+            <p class="block md:hidden text-center py-4">Pensez-bien que tout seul on va plus vite, mais à plusieurs on va plus loin</p>
+    </header>
+
+    <main class="text-center">
+
+        <button type="button" class="hidden md:inline-block m-2 py-2 px-4 bg-gray-500 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none text-xl" tabindex="-1">
+            Retour à la recherche
+        </button>
+
+        <div class="mt-2 border border-gray-700 px-2">
+            <section class="mt-2 border border-gray-700 px-2 md:flex md:justify-around md:items-center md:w-full">
+                <h3 class="uppercase p-2 text-xl font-bold">titre de l'exercice</h3>
+                <div class="flex justify-around">
+                    <button type="button" class="m-2 py-2 px-4 bg-gray-500 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none uppercase" tabindex="-1">
+                        editer
+                    </button>
+                    <button type="button" class="m-2 py-2 px-4 bg-gray-500 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none uppercase" tabindex="-1">
+                        privé
+                    </button>
+                </div>
+            </section>
+
+            <div class="md:grid md:grid-cols-5">
+
+                <section class="mt-2 border border-gray-700 px-2 text-left md:border-none md:col-span-3">
+                    <h3 class="uppercase pt-2 text-xl font-bold ">type de l'exercice</h3>
+                    <ul class="flex">
+                        <li class="pr-2">TAG</li>
+                        <li class="pr-2">TAG</li>
+                        <li class="pr-2">TAG</li>
+                    </ul>
+                    <h3 class="uppercase pt-2 text-xl font-bold ">description</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, molestias.</p>
+                    <h3 class="uppercase pt-2 text-xl font-bold ">notes</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus iure debitis molestiae quae corporis, ex veniam et inventore enim perferendis unde nulla cum facere odit excepturi officia, distinctio ea illo cupiditate reprehenderit tempora maiores ab quia. Aut fuga quam modi amet, molestias necessitatibus sequi tempora, consequatur odit quae saepe nam sit quibusdam sed? Quis architecto harum sunt quam nobis velit consequatur nihil qui perferendis fuga blanditiis quod, voluptate perspiciatis doloribus ab aut sed ipsa corporis similique et inventore amet facilis. Deleniti, aut eveniet? In aut excepturi minus repellat voluptatibus iusto, cum fuga quia officiis deserunt! Placeat sunt inventore officiis ducimus.</p>
+                </section>
+
+                <section class="mt-2 border border-gray-700 px-2 md:col-span-2">
+                        <div class="flex">
+                            <div class="w-full">
+                                <div class="flex items-center md:py-4">
+                                    <h3 class="capitalize text-xl font-bold">auteur :</h3>
+                                    <p class="pl-5">Email de contact</p>
+                                </div>
+                                <div class="flex items-center md:py-4">
+                                    <h3 class="capitalize text-xl font-bold">niveau :</h3>
+                                    <p class="pl-5"></p>Intermédiaire</p>
+                                </div>
+                                <div class="flex items-center md:py-4">
+                                    <h3 class="capitalize text-xl font-bold">temps estimé :</h3>
+                                    <p class="pl-5">XX min</p>
+                                </div>
+                                <div class="flex md:py-4">
+                                    <h3 class="capitalize text-xl font-bold">matériel :</h3>
+                                        <div class="flex flex-col pl-3">
+                                            <p>- XXX</p>
+                                            <p>- XXX</p>
+                                            <p>- XXX</p>
+                                            <p>- XXX</p>
+                                            <p>- XXX</p>
+                                        </div>
+                                </div>
+                                <div class="hidden md:block border border-gray-700">
+                                    <p class="uppercase text-xl pt-3">état de la modération :</p>
+                                    <p class="hidden md:block text-5xl my-6">&#9989;</p>
+                                </div>
+                            </div>
+                            <p class="md:hidden text-5xl pl-16 pt-5 md:pl-0 md:pt-0">&#9989;</p>
+                        </div>
+                        <button type="button" class="m-2 py-2 px-4 bg-gray-500 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none" tabindex="-1">
+                        Ajouter à un nouveau cours
+                        </button>
+                </section>
+
+                <div class="md:col-span-3">
+                    <section class="mt-2 border border-gray-700 px-2 my-2 flex md:border-none">
+                        <h3 class="capitalize text-xl font-bold">media :</h3>
+                        <div class="grid grid-cols-2 p-5">
+                            <a href="" class="p-5 text-7xl">&#127910;</a>
+                            <a href="" class="p-5 text-7xl">&#9654;</a>
+                            <a href="" class="p-5 text-7xl">&#127910;</a>
+                            <a href="" class="p-5 text-7xl">&#9654;</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="md:col-span-2">
+                    <section class="flex justify-around">
+                        <button type="button" class="m-2 py-2 px-4 bg-gray-500 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none text-xl" tabindex="-1">
+                            Partager l'exercice
+                        </button>
+                        <button type="button" class="m-2 py-2 px-4 bg-gray-500 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none text-xl" tabindex="-1">
+                            voir mon cours
+                        </button>
+                    </section>
+                    <button type="button" class="m-2 py-2 px-4 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none text-xl uppercase" tabindex="-1">
+                        &#9888; supprimer l'exercice &#9888;
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="p-2 flex flex-col md:flex-row md:justify-around md:mt-5 items-center border border-gray-400">
+        <a href="" class="capitalize">contacter l'administrateur</a>
+        <a href="" class="p-1">CGU et Mentions légales</a>
+    </footer>
+</body>
+</html>

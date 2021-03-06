@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/tailwind.css" rel="stylesheet">
+    <title>Art'elier</title>
+</head>
+<body class="m-4">
+    <header class="border-2 border-gray-400">
+        <div class="border-b-2 border-gray-400">
+            <nav class="flex justify-between px-4 md:m-3 items-center">
+                <a href="" class="capitalize text-xl md:text-3xl font-bold">art'elier</a>
+                <a href="" class="hidden md:block">mes exercices</a>
+                <a href="" class="hidden md:block">mes cours</a> 
+                <a href="" class="hidden md:block">connexion</a>
+                <button class="md:hidden px-4 py-1 w-auto bg-gray-600 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50">menu</button>
+            </nav>
+        </div>
+            <img class="hidden md:block w-full h-40 md:h-60 object-cover px-5 py-3" src="/img/stage.jpg" alt="">
+            <p class="block md:hidden text-center py-4">Pensez-bien que tout seul on va plus vite, mais à plusieurs on va plus loin</p>
+    </header>
+
+    <main class="text-center w-full">
+        <section class="mt-2 border border-gray-700 px-2 md:border-none">
+            <h3 class="uppercase p-2 md:pb-4 text-xl font-bold">catégories</h3>
+                <div class="grid grid-cols-3 md:grid-cols-none md:flex md:justify-around gap-4 pb-4 text-left md:border md:border-gray-700 md:p-2 md:mx-16 md:mb-10">
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > theatre</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > musique</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > cinéma</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > dance</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > chant</div>
+                </div>
+        </section>
+        <section class="mt-2 border border-gray-700 px-2 md:border-none">
+            <h3 class="uppercase p-2 text-xl font-bold">thématique</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 md:p-5 gap-4 pb-4 text-left md:border md:border-gray-700">
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > echauffements</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > ecoute</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > imagination</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > espace</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > voix</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > concentration</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > personnage</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > A</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > B</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > C</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > D</div>
+                    <div class="capitalize"><input type="checkbox" name="exercice" value="1" > E</div>
+                </div>
+        </section>
+        <section class="m-4">
+        <table class="w-full">
+            <thead>
+                <tr>
+                    <th class="hidden md:block border border-gray-700 px-2">validation</th>
+                    <th class="w-2/4 border border-gray-700 px-2">Titre</th>
+                    <th class="w-1/4 border border-gray-700 px-2">Niveau</th>
+                    <th class="border border-gray-700 px-2">Temps</th>
+                    <th class="border border-gray-700 px-2">+</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="hidden md:block border border-gray-700">&#9989;</td>
+                    <td class="border border-gray-700">exo 1</td>
+                    <td class="border border-gray-700 capitalize">intermédiaire</td>
+                    <td class="border border-gray-700">XX min</td>
+                    <td class="border border-gray-700 text-center"><input type="checkbox" name="exercice" value="1"></td>
+                </tr>
+                <tr>
+                    <td class="hidden md:block border border-gray-700">&#10060;</td>
+                    <td class="border border-gray-700">exo 2</td>
+                    <td class="border border-gray-700 capitalize">confirmé</td>
+                    <td class="border border-gray-700">XX min</td>
+                    <td class="border border-gray-700 text-center"><input type="checkbox" name="exercice" value="1"></td>
+                </tr>
+                <tr>
+                    <td class="hidden md:block border border-gray-700">&#63;</td>
+                    <td class="border border-gray-700">exo 3</td>
+                    <td class="border border-gray-700 capitalize">intermédiaire</td>
+                    <td class="border border-gray-700">XX min</td>
+                    <td class="border border-gray-700 text-center"><input type="checkbox" name="exercice" value="1"></td>
+                </tr>
+                <tr>
+                    <td class="hidden md:block border border-gray-700">&#63;</td>
+                    <td class="border border-gray-700"></td>
+                    <td class="border border-gray-700 capitalize"></td>
+                    <td class="border border-gray-700"></td>
+                    <td class="border border-gray-700 text-center"><input type="checkbox" name="exercice" value="1"></td>
+                </tr>
+                <tr>
+                    <td class="hidden md:block border border-gray-700">&#63;</td>
+                    <td class="border border-gray-700"></td>
+                    <td class="border border-gray-700 capitalize"></td>
+                    <td class="border border-gray-700"></td>
+                    <td class="border border-gray-700 text-center"><input type="checkbox" name="exercice" value="1"></td>
+                </tr>
+            </tbody>
+          </table>
+        </section>
+        <button type="button" class="m-2 py-2 px-4 bg-gray-500 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none" tabindex="-1">
+            Ajouter à un nouveau cours
+        </button>
+        <p class="hidden md:block text-center py-4">Pensez-bien que tout seul on va plus vite, mais à plusieurs on va plus loin</p>
+    </main>
+
+    <footer class="p-2 flex flex-col md:flex-row md:justify-around items-center border border-gray-400">
+        <a href="" class="capitalize">contacter l'administrateur</a>
+        <a href="" class="p-1">CGU et Mentions légales</a>
+    </footer>
+</body>
+</html>

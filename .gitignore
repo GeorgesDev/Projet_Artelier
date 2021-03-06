@@ -1,0 +1,14 @@
+# WORDPRESS
+
+.vscode/
+/Wordpress/wp-config.php
+/Wordpress/vendor/
+/Wordpress/wp/
+/Wordpress/content/themes/*/
+
+# VUEJS
+
+/FrontEnd-Artelier/artelier-vue/.DS_Store
+/FrontEnd-Artelier/artelier-vue/node_modules
+/FrontEnd-Artelier/artelier-vue/dist
+/FrontEnd-Artelier/artelier-vue/src/services/ApiClient.js

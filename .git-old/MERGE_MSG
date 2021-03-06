@@ -1,0 +1,11 @@
+Merge branch 'master' of github.com:O-clock-Marty/project-artelier
+
+# Conflicts:
+#	FrontEnd-Artelier/artelier-vue/src/App.vue
+#	FrontEnd-Artelier/artelier-vue/src/components/DeleteButton.vue
+#	FrontEnd-Artelier/artelier-vue/src/components/Header.vue
+#	FrontEnd-Artelier/artelier-vue/src/components/StatutButton.vue
+#	FrontEnd-Artelier/artelier-vue/src/services/ExerciceService.js
+#	FrontEnd-Artelier/artelier-vue/src/views/ExerciceDetail.vue
+#	FrontEnd-Artelier/artelier-vue/src/views/ExerciceForm.vue
+#	FrontEnd-Artelier/artelier-vue/src/views/ExerciceLibrary.vue

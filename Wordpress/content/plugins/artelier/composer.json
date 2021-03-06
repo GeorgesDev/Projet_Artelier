@@ -1,0 +1,14 @@
+{
+    "name": "etudiant/artelier",
+    "authors": [
+        {
+            "name": "severine vicedo",
+            "email": "s.vicedo@hotmail.fr"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"Artelier\\": "."}
+    }
+    
+}

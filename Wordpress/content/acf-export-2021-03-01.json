@@ -1,0 +1,248 @@
+[
+    {
+        "key": "group_602a8d9394e2a",
+        "title": "Champs Cours",
+        "fields": [
+            {
+                "key": "field_602a8da14a39a",
+                "label": "Exercices disponibles",
+                "name": "exercices",
+                "type": "relationship",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "exercice"
+                ],
+                "taxonomy": "",
+                "filters": [
+                    "search",
+                    "post_type",
+                    "taxonomy"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "lesson"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_602a7c4dc97d5",
+        "title": "Champs Exercice",
+        "fields": [
+            {
+                "key": "field_602a7c633a23d",
+                "label": "Durée de l'exercice",
+                "name": "duree_de_lexercice",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "min",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_602a7d5e3a23e",
+                "label": "Description courte",
+                "name": "description_courte",
+                "type": "text",
+                "instructions": "Description courte de l'exercice",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_602a7f4e3a23f",
+                "label": "Niveau",
+                "name": "niveau",
+                "type": "select",
+                "instructions": "Niveau des élèves : débutant, intermédiaire, confirmé",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Débutant": "Débutant",
+                    "Intermédiaire": "Intermédiaire",
+                    "Confirmé": "Confirmé"
+                },
+                "default_value": false,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_602a7f773a240",
+                "label": "média",
+                "name": "media",
+                "type": "url",
+                "instructions": "Image ou vidéo de l'exercice",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_602a7f913a241",
+                "label": "Statut",
+                "name": "statut",
+                "type": "select",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Public": "Public",
+                    "Privé": "Privé"
+                },
+                "default_value": false,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_602a7fe33a243",
+                "label": "Type d'exercice",
+                "name": "type_dexercice",
+                "type": "checkbox",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Corporel": "Corporel",
+                    "Souffle": "Souffle",
+                    "Voix": "Voix",
+                    "Espace": "Espace",
+                    "Expression": "Expression",
+                    "Imagination": "Imagination"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
+            },
+            {
+                "key": "field_602ce421b4279",
+                "label": "Matériel par élève",
+                "name": "materiel_eleve",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_602ce4a8b427a",
+                "label": "Matériel global",
+                "name": "materiel_global",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "exercice"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

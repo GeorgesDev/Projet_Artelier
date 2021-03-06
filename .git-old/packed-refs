@@ -1,0 +1,11 @@
+# pack-refs with: peeled fully-peeled sorted 
+7ca969aad5675fca55fad52b0305ed07d590ec10 refs/remotes/origin/FrontMM
+640fc0ffb3a2e492add4d449ad1c22e1f28ae3e2 refs/remotes/origin/FrontPartTwo
+5ba3ea7dd9e1e5f72ce05304502713c4e1711be1 refs/remotes/origin/Installation-WP
+fc093103e6022d4346cb76e914df06917e770c85 refs/remotes/origin/Plugin_artelier
+d45aa0170860bfa1d10935bb4ba61f1707a84548 refs/remotes/origin/Plugin_v2
+d55e6021a89b5effce0646d87a7cb515f7b6366a refs/remotes/origin/intégration
+e398ed1c3abed5ac1bf108163d47939a92583f66 refs/remotes/origin/last_sprint
+eb49aaaa2989abed5eab79e84e18db304d1f0bf8 refs/remotes/origin/master
+6ff02c043d28d1a5a44c338b07b9d2fb032c25bf refs/remotes/origin/vueaxios
+d906c15bfb3ac779e7903146db2f001a59ed7583 refs/remotes/origin/vueaxiosV2
