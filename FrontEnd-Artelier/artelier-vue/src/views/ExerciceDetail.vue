@@ -37,7 +37,7 @@
                             <div class="border border-gray-700 flex items-center my-3 bg-white">
                                 <h3 class="uppercase text-l font-bold p-2">type :</h3>
                                     <ul class="flex">
-                                        <li class="pr-2" v-bind:key="idExerciceType" v-for="(type,idExerciceType) in exercice.meta.type_dexercice">
+                                        <li class="pr-2" v-bind:key="idExerciceType" v-for="(type,idExerciceType) in exercice.type_dexercice">
                                             <label>{{ type }}</label>
                                         </li>
                                     </ul>

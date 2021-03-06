@@ -6,13 +6,22 @@
             <nav class="flex justify-around px-4 md:m-3 items-center">
                 <router-link :to="{ name : 'home' }" class="capitalize text-xl md:text-4xl font-bold">art'elier</router-link>
 
+      <!-- Menu visiteurs -->
                 <div v-if="!isConnected" class="flex">
                   <router-link :to="{ name : 'exercice-library' }" class="hidden md:block m-2 px-2 capitalize border-2 border-purple-900 text-white">Exercices</router-link>
                 </div>
+
+                <div v-if="!isConnected" class="flex">
+                  <router-link :to="{ name : 'lesson-library' }" class="hidden md:block m-2 px-2 capitalize border-2 border-purple-900 text-white">Cours</router-link>
+                </div>
+
+      <!-- Menu Professeurs -->      
                   <div v-if="isConnected" class="flex">
                      <router-link :to="{ name : 'exercice-library' }" class="hidden md:block m-2 px-2 capitalize border-2 border-purple-900 text-white">Mes exercices</router-link>
                   <router-link :to="{ name : 'exercice-form' }" class="hidden md:block m-2 px-2 capitalize border-2 border-purple-900 text-white">creer un exercice</router-link>
-                  <!-- <a href="/lesson" class="hidden md:block">mes cours</a> -->
+                     <router-link :to="{ name : 'lesson-library' }" class="hidden md:block m-2 px-2 capitalize border-2 border-purple-900 text-white">Mes cours</router-link>
+                  <router-link :to="{ name : 'lesson-form' }" class="hidden md:block m-2 px-2 capitalize border-2 border-purple-900 text-white">creer un cours</router-link>
+                 
                   </div>
 
                 <div v-if="isConnected" class="flex flex-col items-center">
