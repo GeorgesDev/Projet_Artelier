@@ -38,10 +38,12 @@
                         <tbody>
                             <tr :key="index" v-for="(exercice,index) in exercices">
                                 <td class="border border-blue-800 capitalize underline"><router-link :to="`/exercice/${exercice.id}`"><title :exercice="exercice" />{{ exercice.title.rendered}}</router-link></td> 
-                                <td class="border border-blue-800 capitalize">{{exercice.niveau}}</td>
-                                <td class="border border-blue-800 capitalize">{{exercice.description_courte}}</td>
-                                <td class="border border-blue-800 ">{{exercice.duree_de_lexercice}} min</td>
-                                <td class="border border-gray-700">{{exercice.type_dexercice}}</td>
+                                <td class="border border-blue-800 capitalize">{{ exercice.niveau }}</td>
+                                <td class="border border-blue-800 capitalize">{{ exercice.description_courte }}</td>
+                                <td class="border border-blue-800 ">{{ exercice.duree_de_lexercice }} min</td>
+                                
+                                <td class="border border-gray-700"> <li class="pr-2" v-bind:key="idExerciceType" v-for="(type,idExerciceType) in exercice.type_dexercice">
+                                    {{ type }}</li></td>
                             </tr>
                            
                         </tbody>
@@ -58,7 +60,6 @@
 
 <script>
 import axios from "axios"
-
 export default {
     mounted () {
         this.getExerciceList();
@@ -85,8 +86,16 @@ export default {
                 console.log(error);
             });
         },
-
+        getExercice() {
+            axios.get(this.exercicesUrl, {params: this.$route.id})
+            .then((response) => {
+                this.exoType = response.data.meta.type_dexercice;
+                console.log(this.exercices);
+            })
+            .catch( (error) => {
+                console.log(error);
+            });
+        },
     } 
 }
 </script>
-
