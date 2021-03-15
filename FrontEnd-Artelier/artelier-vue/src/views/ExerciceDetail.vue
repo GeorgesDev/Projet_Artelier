@@ -43,9 +43,10 @@
                                     </ul>
                             </div>
                             <div class="border border-gray-700 p-1 my-3 bg-white">
-                                <h3 class="uppercase text-l font-bold px-1">Description générale : </h3>
+                                <h3 class="uppercase text-l font-bold px-1">Description générale : {{exercice.description_courte}} </h3>
                                 <p class="pl-5">
-                                    <span v-html=exercice.excerpt.rendered></span>
+                                    
+                                    <!-- <span v-html=exercice.excerpt.rendered></span> -->
                                 </p>
                             </div>
                             <div class="border border-gray-700 p-1 mt-3 h-72 bg-white">

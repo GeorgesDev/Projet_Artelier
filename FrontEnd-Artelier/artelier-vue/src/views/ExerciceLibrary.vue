@@ -42,8 +42,8 @@
                                 <td class="border border-blue-800 capitalize">{{ exercice.description_courte }}</td>
                                 <td class="border border-blue-800 ">{{ exercice.duree_de_lexercice }} min</td>
                                 
-                                <td class="border border-gray-700"> <li class="pr-2" v-bind:key="idExerciceType" v-for="(type,idExerciceType) in exercice.type_dexercice">
-                                    {{ type }}</li></td>
+                                <td class="border border-gray-700"> <div class="pr-2" v-bind:key="idExerciceType" v-for="(type,idExerciceType) in exercice.type_dexercice">
+                                    {{ type }}</div></td>
                             </tr>
                            
                         </tbody>
@@ -67,7 +67,7 @@ export default {
    
     data() {
         return {
-            exercicesUrl: 'http://localhost/apotheose_complet/project-artelier/Wordpress/wp-json/wp/v2/exercice/',
+            exercicesUrl: 'http://localhost/Projet_Artelier/Wordpress/wp-json/wp/v2/exercice/',
             exercices: [],
             exercicesData: {
                 per_page: 5,
