@@ -3,6 +3,10 @@
             <body class="m-4">
                 <main class="text-center">
                     <button type="button" class="hidden md:inline-block m-2 py-2 px-4 bg-gray-500 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none text-xl" tabindex="-1">
+                    <router-link :to="{ name : 'exercice-library' }"> Retour à la liste des exercices </router-link>
+                    </button>
+
+                    <button type="button" class="hidden md:inline-block m-2 py-2 px-4 bg-gray-500 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none text-xl" tabindex="-1">
                     <router-link :to="{ name : 'home' }"> Retour à l'accueil </router-link>
                     </button>
 
@@ -25,7 +29,7 @@
                     <div class="md:grid md:grid-cols-5 ">
 
                         <section class="mt-2 border border-gray-700 pr-2 text-left md:border-none md:col-span-3 ">
-                            <!-- <div class="border border-gray-700 flex items-center bg-white">
+                            <div class="border border-gray-700 flex items-center bg-white">
                                 <h3 class="uppercase text-l font-bold p-2">catégorie :</h3>
                                 <ul v-bind:key="idExercice" v-for="(type, idExercice) in exercice.art">
                                     <li :for="artListglobal[idExercice]" class="text-l pr-2">
@@ -33,7 +37,7 @@
                                     </li>
                                 </ul>
                                 
-                            </div> -->
+                            </div>
                             <div class="border border-gray-700 flex items-center my-3 bg-white">
                                 <h3 class="uppercase text-l font-bold p-2">type :</h3>
                                     <ul class="flex">

@@ -18,8 +18,8 @@ export default {
     },
 
       // récupération de l'ensemble (liste) des exercices
-      getArtList: function () {
-        return apiClient.get(baseUrlSuffix + '/art')
+      getArtList: function (id) {
+        return apiClient.get(baseUrlSuffix + '/art'+ id)
     },
 
     // création d'un exercice
